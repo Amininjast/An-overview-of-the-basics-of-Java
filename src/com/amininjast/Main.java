@@ -1,6 +1,14 @@
 package com.amininjast;
 
+import java.util.Arrays;
+
 public class Main {
+    public static String MALE="MALE";
+    public static String FEMALE="FEMALE";
+
+    enum Gender{
+        Male,Female
+    }
 
     public static void main(String[] args) {
         //old version of switch
@@ -40,18 +48,34 @@ public class Main {
 //            default -> 0;
 //        };
 //        System.out.println(boo);
+        System.out.println(Main.MALE);
+        System.out.println(Main.FEMALE);
 
-        asa();
-        System.out.println("lalay lay");
+        System.out.println();
+
+        System.out.println(Gender.Male);
+        System.out.println(Gender.Female);
+
+        System.out.println();
+
+        System.out.println(Color.red);
+        System.out.println(Color.valueOf("red"));
+        System.out.println(Arrays.toString(Color.values()));
+
+        System.out.println();
+
+        for(Color color:Color.values()){
+            System.out.println(color);
+        }
     }
-    public static void asa(){
-        var names=new String[]{"amin","mina","hasan"};
-         for(String name:names){
-            if(name.startsWith("m")){
-                return;
-            }
-             System.out.println(name);
-         }
-        System.out.println("in bade return e ");
-    }
+//    public static void asa(){
+//        var names=new String[]{"amin","mina","hasan"};
+//         for(String name:names){
+//            if(name.startsWith("m")){
+//                break;
+//            }
+//             System.out.println(name);
+//         }
+//        System.out.println("in bade return e ");
+//    }
 }
