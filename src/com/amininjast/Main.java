@@ -48,7 +48,7 @@ public class Main {
         var names=new String[]{"amin","mina","hasan"};
          for(String name:names){
             if(name.startsWith("m")){
-                break;
+                continue;
             }
              System.out.println(name);
          }
