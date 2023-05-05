@@ -3,9 +3,6 @@ package com.amininjast;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Amin Injast");
-        char a = 'A';
-        int b=2;
         //old version of switch
 //        switch (a){
 //            case 'A':
@@ -36,13 +33,24 @@ public class Main {
 //            default -> "its not A, B, C, D";
 //        };
 
-        int boo=switch (b){
-            case 1->1;
-            case 2->2;
-            case 3->3;
-            default -> 0;
-        };
-        System.out.println(boo);
+//        int boo=switch (b){
+//            case 1->1;
+//            case 2->2;
+//            case 3->3;
+//            default -> 0;
+//        };
+//        System.out.println(boo);
 
+        asa();
+
+    }
+    public static void asa(){
+        var names=new String[]{"amin","mina","hasan"};
+         for(String name:names){
+            if(name.startsWith("m")){
+                break;
+            }
+             System.out.println(name);
+         }
     }
 }
