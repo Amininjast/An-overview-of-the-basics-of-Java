@@ -42,15 +42,16 @@ public class Main {
 //        System.out.println(boo);
 
         asa();
-
+        System.out.println("lalay lay");
     }
     public static void asa(){
         var names=new String[]{"amin","mina","hasan"};
          for(String name:names){
             if(name.startsWith("m")){
-                continue;
+                return;
             }
              System.out.println(name);
          }
+        System.out.println("in bade return e ");
     }
 }
