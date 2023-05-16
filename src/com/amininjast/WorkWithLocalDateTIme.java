@@ -3,6 +3,7 @@ package com.amininjast;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.Month;
 
 public class WorkWithLocalDateTIme {
     public static void main(String[] args) {
@@ -25,5 +26,14 @@ public class WorkWithLocalDateTIme {
         LocalTime localTime = LocalTime.now();
         System.out.println(localTime);
 
+        System.out.println("****************************");
+        LocalDateTime localDateTime = LocalDateTime.of(1995, Month.FEBRUARY, 28, 12, 00);
+        System.out.println(localDateTime);
+        System.out.println("****************************");
+        LocalDate someLocalDate = LocalDate.of(1995, Month.FEBRUARY, 28);
+        System.out.println(someLocalDate);
+        System.out.println("****************************");
+        LocalTime someLocalTime = LocalTime.of(23, 55, 0);
+        System.out.println(someLocalTime);
     }
 }
