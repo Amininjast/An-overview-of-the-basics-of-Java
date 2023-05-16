@@ -3,12 +3,12 @@ package com.amininjast;
 import java.util.Arrays;
 
 public class Main {
-    public static String MALE="MALE";
-    public static String FEMALE="FEMALE";
-
-    enum Gender{
-        Male,Female
-    }
+//    public static java.lang.String MALE = "MALE";
+//    public static java.lang.String FEMALE = "FEMALE";
+//
+//    enum Gender {
+//        Male, Female
+//    }
 
     public static void main(String[] args) {
         //old version of switch
@@ -48,26 +48,26 @@ public class Main {
 //            default -> 0;
 //        };
 //        System.out.println(boo);
-        System.out.println(Main.MALE);
-        System.out.println(Main.FEMALE);
-
-        System.out.println();
-
-        System.out.println(Gender.Male);
-        System.out.println(Gender.Female);
-
-        System.out.println();
-
-        System.out.println(Color.red);
-        System.out.println(Color.valueOf("red"));
-        System.out.println(Arrays.toString(Color.values()));
-
-        System.out.println();
-
-        for(Color color:Color.values()){
-            System.out.println(color);
-        }
-    }
+//        System.out.println(Main.MALE);
+//        System.out.println(Main.FEMALE);
+//
+//        System.out.println();
+//
+//        System.out.println(Gender.Male);
+//        System.out.println(Gender.Female);
+//
+//        System.out.println();
+//
+//        System.out.println(Color.red);
+//        System.out.println(Color.valueOf("red"));
+//        System.out.println(Arrays.toString(Color.values()));
+//
+//        System.out.println();
+//
+//        for(Color color:Color.values()){
+//            System.out.println(color);
+//        }
+//    }
 //    public static void asa(){
 //        var names=new String[]{"amin","mina","hasan"};
 //         for(String name:names){
@@ -78,4 +78,7 @@ public class Main {
 //         }
 //        System.out.println("in bade return e ");
 //    }
+        String string = new String();
+        StringClass.stringa();
+    }
 }
