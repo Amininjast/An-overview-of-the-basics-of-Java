@@ -12,6 +12,8 @@ public class WorkWithException {
         } catch (Exception e) {
             System.out.println("All Exception");
             System.out.println(e.getMessage());
+        } finally {
+            System.out.println("Finally always run");
         }
 
     }
