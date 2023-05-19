@@ -1,15 +1,25 @@
 package com.amininjast;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
+import java.util.Scanner;
 
 public class WorkWithFile {
     public static void main(String[] args) {
         File file = createFile("src/Amin.txt");
         writeFile(file, true);
+        readFile(file);
 
+    }
+
+    private static void readFile(File file) {
+        try {
+            Scanner scanner = new Scanner(file);
+            while (scanner.hasNext()) {
+                System.out.println(scanner.nextLine());
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     private static void writeFile(File file, boolean append) {
