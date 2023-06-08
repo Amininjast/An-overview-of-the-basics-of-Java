@@ -1,10 +1,5 @@
 package com.amininjast;
 
-import com.amininjast.workwithinterface.Bike;
-import com.amininjast.workwithinterface.Car;
-import com.amininjast.workwithinterface.Eskuter;
-import com.amininjast.workwithinterface.Vehicle;
-
 public class Main {
 //    public static java.lang.String MALE = "MALE";
 //    public static java.lang.String FEMALE = "FEMALE";
@@ -84,19 +79,6 @@ public class Main {
 //        String string = new String();
 //        StringClass.stringa();
 //
-        Car car = new Car();
-        Bike bike = new Bike();
-        Eskuter eskuter = new Eskuter();
-
-        Vehicle[] vehicles = {car, bike, eskuter};
-        Person person = new Person("Amin", vehicles);
-        for (Vehicle vehicle : person.getVehicle()) {
-            vehicle.start();
-            vehicle.stop();
-            System.out.println();
-        }
-        System.out.println(Vehicle.speed);
-        System.out.println(car.kiloToMile(100));
 
     }
 }
