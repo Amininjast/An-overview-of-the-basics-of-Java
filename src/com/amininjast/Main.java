@@ -1,6 +1,9 @@
 package com.amininjast;
 
-import java.util.Arrays;
+import com.amininjast.workwithinterface.Bike;
+import com.amininjast.workwithinterface.Car;
+import com.amininjast.workwithinterface.Eskuter;
+import com.amininjast.workwithinterface.Vehicle;
 
 public class Main {
 //    public static java.lang.String MALE = "MALE";
@@ -78,7 +81,21 @@ public class Main {
 //         }
 //        System.out.println("in bade return e ");
 //    }
-        String string = new String();
-        StringClass.stringa();
+//        String string = new String();
+//        StringClass.stringa();
+//
+        Car car = new Car();
+        Bike bike = new Bike();
+        Eskuter eskuter = new Eskuter();
+
+        Vehicle[] vehicles = {car, bike, eskuter};
+        Person person = new Person("Amin", vehicles);
+        for (Vehicle vehicle : person.getVehicle()) {
+            vehicle.start();
+            vehicle.stop();
+            System.out.println();
+        }
+
+
     }
 }
