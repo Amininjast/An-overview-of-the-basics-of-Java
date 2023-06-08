@@ -95,7 +95,8 @@ public class Main {
             vehicle.stop();
             System.out.println();
         }
-
+        System.out.println(Vehicle.speed);
+        System.out.println(car.kiloToMile(100));
 
     }
 }
