@@ -14,6 +14,10 @@ public class Person {
 
     private Vehicle[] vehicle;
 
+    public Person(String firstName) {
+        this.firstName = firstName;
+    }
+
     public Person(String firstName, Vehicle[] vehicle) {
         this.firstName = firstName;
         this.vehicle = vehicle;
