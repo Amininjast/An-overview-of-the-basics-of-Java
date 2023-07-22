@@ -23,14 +23,11 @@ public class WorkWithFile {
     }
 
     private static void writeFile(File file, boolean append) {
-        try {
-            FileWriter fileWriter = new FileWriter(file, append);
-            PrintWriter printWriter = new PrintWriter(fileWriter);
-            printWriter.println("Amin");
-            printWriter.println("");
-            printWriter.println("INJAST");
-            printWriter.flush();
-            printWriter.close();
+        try (FileWriter fileWriter = new FileWriter(file, append);
+             PrintWriter printWriter = new PrintWriter(fileWriter);) {
+            printWriter.println("1");
+            printWriter.println("2");
+            printWriter.println("3");
 
         } catch (IOException e) {
             System.out.println(e.getMessage());

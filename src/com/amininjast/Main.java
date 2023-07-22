@@ -1,7 +1,5 @@
 package com.amininjast;
 
-import java.util.Arrays;
-
 public class Main {
 //    public static java.lang.String MALE = "MALE";
 //    public static java.lang.String FEMALE = "FEMALE";
@@ -78,7 +76,9 @@ public class Main {
 //         }
 //        System.out.println("in bade return e ");
 //    }
-        String string = new String();
-        StringClass.stringa();
+//        String string = new String();
+//        StringClass.stringa();
+//
+
     }
 }
