@@ -10,7 +10,7 @@ public class BoundedTypeParameters {
         System.out.println(countGreaterThan(numbers2, number2));
     }
 
-    static <T extends Comparable> int countGreaterThan(T[] numbers, T number) {
+    static <T extends Comparable<T>> int countGreaterThan(T[] numbers, T number) {
         int count = 0;
         for (T a : numbers) {
             if (a.compareTo(number) > 0) {
