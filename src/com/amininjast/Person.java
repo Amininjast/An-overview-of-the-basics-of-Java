@@ -11,6 +11,16 @@ public class Person {
     private String lastName;
     private Address address;
     private String country;
+    private int age;
+
+    public Person(String firstName, int age) {
+        this.firstName = firstName;
+        this.age = age;
+    }
+
+    public int getAge() {
+        return age;
+    }
 
     private Vehicle[] vehicle;
 
@@ -21,6 +31,10 @@ public class Person {
     public Person(String firstName, Vehicle[] vehicle) {
         this.firstName = firstName;
         this.vehicle = vehicle;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public static int getCounter() {
